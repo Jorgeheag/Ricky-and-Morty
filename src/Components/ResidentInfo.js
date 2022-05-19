@@ -4,14 +4,10 @@ import Resident from "./Residet/Resident";
 
 const ResidentInfo = () => {
   const [location, setlocation] = useState();
-
-  const random = Math.floor(Math.random() * 126) + 1;
-
- 
-
   const [searcH,setsearcH] = useState("")
 
   useEffect(() => {
+    const random = Math.floor(Math.random() * 126) + 1;
     axios
       .get(`https://rickandmortyapi.com/api/location/${random}`)
       .then((res) => setlocation(res.data)); 
