@@ -7,18 +7,14 @@ const ResidentInfo = () => {
 
   const random = Math.floor(Math.random() * 126) + 1;
 
-  const [habitantes, sethabitantes] = useState({});
+ 
 
   const [searcH,setsearcH] = useState("")
 
   useEffect(() => {
     axios
       .get(`https://rickandmortyapi.com/api/location/${random}`)
-      .then((res) => setlocation(res.data));
-
-    axios
-      .get(`https://rickandmortyapi.com/api/location/${random}`)
-      .then((res) => sethabitantes(res.data?.residents));
+      .then((res) => setlocation(res.data)); 
   }, []);
 
   console.log(location);
