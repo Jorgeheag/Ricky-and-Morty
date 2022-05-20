@@ -6,7 +6,7 @@ const Resident = ({ habitantes }) => {
 
   useEffect(() => {
     axios.get(habitantes).then((res) => setProfile(res.data));
-  }, []);
+  }, [habitantes]);
 
   return (
     <div className="card-residet">
