@@ -1,9 +1,8 @@
 .App {
-  height: 100%;
-  width: 100%;
+  height: 1080px;
+  width: 1920px;
   margin: 0;
-  display:flex ;
-  background-image: url(/src/imgs/RickyMorty.jpg);
+  background-image: url(/src/imgs/rick-y-morty-fanart-2020_1920x1080_xtrafondos.com.jpg);
   background-repeat: no-repeat;
   background-size: 1000;
 
@@ -11,38 +10,67 @@
 
 .card-character{
   height: 100%;
-  margin-top: 50vh;
+  height: 100%;
+  justify-content: center;
+  
+}
+
+.search{  
+  display: flex;
+  justify-content: center;
+
 }
 
 .jorge{
-  width: 25%;
-  padding-top: 0;
   display: flex;
-  justify-content: center;
-  background-color: #ffffff;
+  color: rgb(0, 225, 255);
+  justify-content: space-around;
+  background-color: rgba(165, 42, 42, 0.226);
+  width: 1920px;
+  height: 91px;
+
 }
 
 .sub-title{
   font-weight: 700;
   font-size: 24px;
 }
+
+.resit-info{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: rgba(139, 44, 0, 0.205);
+  margin-top: -23px;
+}
+
 .result{
   font-size: 18px;
 }
 .card-residet{
-  
-  display: flex;
-  background-color: rgba(36, 23, 175, 0.729);
-  border-radius: 2vh;
-  box-shadow: 3vh;
-  color: rgba(220, 245, 240, 0.562);
-  margin-top: 4vh;
-  height: 25vh;
+  display: block;
+  text-align: left;
+  width: 163px;
+  height: auto;
+  background-color: #0622267e;
+  margin: 5vh 5vh;
+  color: rgb(255, 255, 255);
+  padding-bottom: 10px;
   
 }
 
-.card-residet img{
-  border-radius: 2vh;
+.card-residet img {
+  width: 162px;
+}
+
+#nameId{
+  color: red;
+  font-size: larger;
+}
+
+#ulList{
+  padding-left: 20px;
+  color: #ffffff;
 }
 
 .universe{
