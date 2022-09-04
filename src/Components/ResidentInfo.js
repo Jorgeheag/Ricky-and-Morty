@@ -25,15 +25,15 @@ const ResidentInfo = () => {
   return (
     <div className="card-character">
       <div className="jorge">
-        <div className="sub-title">Universe: </div><div className='result'>{location?.name} </div>
-        <div className="sub-title">Dimension: </div><div className='result'>{location?.dimension} </div>
-        <div className="sub-title">Population: </div><div className='result'>{location?.residents.length} </div>
+        <div className="sub-title">Universe:<div className='result'>{location?.name} </div></div>
+        <div className="sub-title">Dimension:<div className='result'>{location?.dimension} </div> </div>
+        <div className="sub-title">Population:<div className='result'>{location?.residents.length} </div> </div>
       </div>  
-     <div>
+     <div className="search">
        <input type="text" placeholder="id for search" onChange={(e) => setsearcH(e.target.value)} value={searcH} />
        <button onClick={searchWorld}>searh</button>
      </div>
-      <ul>
+      <ul className="resit-info">
         {location?.residents?.map((e) => (
           <Resident habitantes={e} key={e} />
         ))}

@@ -1,30 +1,27 @@
 .App {
-  width: 100%;
   height: 100%;
-  text-align: center;
-  background-image: url(/src/imgs/f1280x720-1500_133175_3241.jpg);
-  background-size: 110vh ;
-  background-position: 0px -160px;
-  background-repeat: no-repeat;
-  background-color: #05292e;
-  font-family:  Roboto, sans-serif;
-}
-.jorge{
   width: 100%;
-  padding-top: 20px;
+  margin: 0;
+  display:flex ;
+  background-image: url(/src/imgs/RickyMorty.jpg);
+  background-repeat: no-repeat;
+  background-size: 1000;
+
+}
+
+.card-character{
+  height: 100%;
+  margin-top: 50vh;
+}
+
+.jorge{
+  width: 25%;
+  padding-top: 0;
   display: flex;
   justify-content: center;
   background-color: #ffffff;
 }
-.card-character{
-  width: 100%;
-  height: 100%;
-  background-size: contain;
-  padding-top: 1030px;
-  justify-content: center;
-  background-image: url(/src/imgs/f1280x720-1500_133175_3241.jpg);
-  background-repeat: no-repeat;
-}
+
 .sub-title{
   font-weight: 700;
   font-size: 24px;
@@ -59,7 +56,88 @@
   font-weight: bold;
 }
 
-  
+
+@media (max-width: 600px) {
+  .App {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    display:flex ;
+    background-image: url(/src/imgs/RickyMorty.jpg);
+    background-repeat: no-repeat;
+    background-size: 600px ;
+    
+  }
+
+  .card-character{
+    height: 100%;
+    margin-top: 50vh;
+    height: 100%;
+    justify-content: center;
+    
+  }
+  #nameId{
+    color: red;
+    font-size: larger;
+  }
+
+  #ulList{
+    padding-left: 20px;
+    color: #ffffff;
+  }
+
+  .jorge{
+    display: flex;
+    justify-content: space-around;
+    background-color: brown;
+    width: 606px;
+    height: 91px;
+   
+  }
+    
+  .jorge div {
+    color: coral;
+    padding: 18px;
+    text-align: center;
+    margin-top: -19px;
+  }
+
+  .result{
+    font-size: 18px;
+    padding: 0;
+  }
+
+  .search{
+    display: flex;
+    justify-content: center;
+  }
+
+  .card-residet{
+    display: block;
+    text-align: left;
+    width: 163px;
+    height: auto;
+    background-color: #062226;
+    margin: 5vh 5vh;
+    color: rgb(51, 126, 193);
+    padding-bottom: 10px;
+  }
+
+  .card-residet img {
+    width: 162px;
+  }
+
+  .card-residet div h1 {
+    margin: 0;
+  }
+  .resit-info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: darkcyan;
+    margin-top: -23px;
+  }
+}
   
   
   

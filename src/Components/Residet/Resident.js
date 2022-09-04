@@ -14,14 +14,19 @@ const Resident = ({ habitantes }) => {
       <img src={profile.image} alt="" />
 
       <div>
-      <h1>{profile.name}</h1>
-      <ul>
-        <li>
+        <div>
+        <h1 id="nameId">{profile.name}</h1>
+        </div>
+      <div>
+       <ul id="ulList">
+         <li>
           Estatus: {profile.status}-{profile.species}
-        </li>
-        <li>Episodes: {profile.episode?.length}</li>
-        <li>Species: {profile.species} </li>
-      </ul>
+         </li>
+         <li>Episodes: {profile.episode?.length}</li>
+         <li>Species: {profile.species} </li>
+       </ul>
+      </div>
+      
       </div>
 
       
