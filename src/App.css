@@ -47,6 +47,25 @@
 .result{
   font-size: 18px;
 }
+
+#circle{
+  background-color: red;
+  margin: 5px;
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  
+}
+
+#statelife{
+  background-color: rgba(0, 0, 0, 0.767);
+  border-radius: 4px;
+  width: max-content;
+  display: flex;
+  position: absolute;
+  color: rgb(247, 49, 23);
+  padding-right: 5px;
+}
 .card-residet{
   display: block;
   text-align: left;

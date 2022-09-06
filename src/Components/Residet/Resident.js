@@ -8,8 +8,23 @@ const Resident = ({ habitantes }) => {
     axios.get(habitantes).then((res) => setProfile(res.data));
   }, [habitantes]);
 
+  const less = () =>{
+    if(profile.status === "Alive"){
+      return ("green")
+    }else if(profile.status === "Dead") {
+      return ("red")
+    }else{
+      return ("blue")
+    }
+  }
+
   return (
     <div className="card-residet">
+      <div id="statelife">
+       <div id="circle" style={{backgroundColor: less()}}></div>
+       <div>{profile.status}</div>
+      </div>
+      
       
       <img src={profile.image} alt="" />
 
@@ -20,6 +35,7 @@ const Resident = ({ habitantes }) => {
       <div>
        <ul id="ulList">
          <li>
+         
           Estatus: {profile.status}-{profile.species}
          </li>
          <li>Episodes: {profile.episode?.length}</li>
